@@ -11,10 +11,13 @@ export class LoginComponent implements OnInit {
   constructor() { 
     this.title ="this is coming from the login component";
   }
+  public username: any;
+  public password: any;
 
   ngOnInit() {
   }
 
+  
   
 
 }
