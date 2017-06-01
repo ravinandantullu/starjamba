@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "Angular.ng-template",
+    "michelemelluso.code-beautifier",
+    "wmaurer.change-case",
+    "PeterJausovec.vscode-docker",
+    "EditorConfig.editorconfig",
+    "eg2.tslint",
+    "emmanuelbeziat.vscode-great-icons"
+  ]
+}

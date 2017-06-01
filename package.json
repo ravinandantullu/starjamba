@@ -1,6 +1,6 @@
 {
   "name": "starjamba",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
@@ -42,9 +42,13 @@
     "karma-remap-istanbul": "^0.2.1",
     "node-sass": "^4.5.3",
     "protractor": "~4.0.13",
+    "sass-loader": "^4.0.2",
     "ts-node": "1.2.1",
     "tslint": "^4.3.0",
-    "sass-loader":"^4.0.2",
     "typescript": "~2.0.3"
-  }
+  },
+  "description": "\"StarJamba\"",
+  "main": "index.js",
+  "repository": "https://github.com/ravinandantullu/starjamba.git",
+  "author": "Tulluri, Ravinandan <ravinandan.tulluri@gmail.com>"
 }
