@@ -7,17 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
   public title;
-
-  constructor() { 
-    this.title ="this is coming from the login component";
-  }
   public username: any;
   public password: any;
 
-  ngOnInit() {
+  constructor() {
+    this.title = 'this is coming from the login component';
   }
 
-  
-  
-
+  ngOnInit() {
+  }
 }
