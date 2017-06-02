@@ -1,6 +1,6 @@
 import { StarjambaPage } from './app.po';
 
-describe('starjamba App', function() {
+describe('starjamba App', function () {
   let page: StarjambaPage;
 
   beforeEach(() => {

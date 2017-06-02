@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Rx';
+import { Http, Response, Headers, RequestOptions } from '@angular/http';
 
 @Injectable()
 export class ServerrequestService {
 
-  constructor() { }
+  constructor(private http: Http) { }
 
-  public validate(url: string): Promise<any> {
-    return Promise.resolve({
-      username: "test@gmail.com",
-      password: "test1",
-    })
+  getLogin(url): Observable<Comment[]> {
+    return this.http.get(url)
+      .map((res: Response) => res.json())
+      .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
   }
-
 }

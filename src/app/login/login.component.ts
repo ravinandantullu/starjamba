@@ -8,27 +8,29 @@ import { ServerrequestService } from '../serverrequest.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  public title;
-  public username: any;
+  public username: string;
   public password: any;
   private validate: any;
+  public url = 'https://api.myjson.com/bins/18y6i9';
 
-  constructor(private router: Router, private serverrequestService: ServerrequestService) {
-    this.title = "this is coming from the login component";
-  }
+  constructor(private router: Router, private serverrequestService: ServerrequestService) { }
 
   ngOnInit() {
   }
 
-  public url = "https://api.myjson.com/bins/18y6i9";
   private login() {
-    this.serverrequestService.validate(this.url)
-      .then(res => this.validate = res);
-    console.log(this.validate);
-    // if(this.validate.username === this.username && this.validate.password === this.password){
-    this.router.navigate(['home']);
-    // }else{
-    // this.router.navigate(['login']);
-    // }
+    this.serverrequestService.getLogin(this.url)
+      .subscribe(
+      comments => {
+        this.validate = comments;
+        if (this.validate.username === this.username && this.validate.password === this.password) {
+          this.router.navigate(['home']);
+        } else {
+          this.router.navigate(['login']);
+        }
+      },
+      err => {
+        console.log(err);
+      });
   }
 }
