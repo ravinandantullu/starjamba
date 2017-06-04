@@ -17,7 +17,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 /**
  * Services
  */
-import { ServerrequestService } from './serverrequest.service';
+import { ServerrequestService } from './service/serverrequest.service';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
