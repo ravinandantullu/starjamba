@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ServerrequestService } from '../serverrequest.service';
+import { ServerrequestService } from '../service/serverrequest.service';
 
 @Component({
   selector: 'app-login',
