@@ -4,10 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
-import 'hammerjs';
-
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
 /**
  * Component
  */
@@ -39,6 +38,7 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
+    MaterialModule,
     RouterModule.forRoot(appRoutes, { useHash: true }),
   ],
   providers: [
