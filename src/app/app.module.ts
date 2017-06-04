@@ -3,6 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
+
+import 'hammerjs';
+
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 /**
  * Component
  */
@@ -13,6 +18,8 @@ import { HomepageComponent } from './homepage/homepage.component';
  * Services
  */
 import { ServerrequestService } from './serverrequest.service';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -23,12 +30,15 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LoginComponent,
-    HomepageComponent
+    HomepageComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes, { useHash: true }),
   ],
   providers: [
