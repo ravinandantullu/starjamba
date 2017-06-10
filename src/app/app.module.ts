@@ -19,6 +19,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ServerrequestService } from './service/serverrequest.service';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     LoginComponent,
     HomepageComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
