@@ -1,3 +1,19 @@
 .mat-slide-toggle /deep/ .mat-slide-toggle-bar {
     background-color: red;
 }
+
+.example-container {
+  width: 100%;
+  height: auto;
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
