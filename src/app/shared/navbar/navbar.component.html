@@ -1,3 +1,22 @@
-<p>
-  navbar works!
-</p>
+<!--<md-slide-toggle>Slide me!</md-slide-toggle>-->
+
+<md-sidenav-container class="example-container">
+  <md-sidenav #sidenav class="example-sidenav" opened="true">
+    Jolly good!
+    <header>
+      <h1>Starjamba</h1>
+    </header>
+    <div id="toogletest">
+      <md-slide-toggle>Slide me!</md-slide-toggle>
+    </div>
+
+  </md-sidenav>
+
+  <div class="example-sidenav-content">
+    <button md-button (click)="sidenav.open()">
+      Open sidenav
+    </button> hsdkfjfksdhfdshfksfhsdfsdfsfs
+  </div>
+
+</md-sidenav-container>
+<app-footer></app-footer>
